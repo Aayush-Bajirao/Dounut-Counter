@@ -60,7 +60,8 @@ class _NinjaCardState extends State<NinjaCard> {
               ),
               Container(
                 padding: EdgeInsets.fromLTRB(0.0, 0, 0, 5.0),
-                child: Text('Dounut Counts',
+                child: 
+                Text('Dounut Counts',
                     style: TextStyle(
                       color: Colors.grey,
                       letterSpacing: 2.0,
@@ -90,7 +91,15 @@ class _NinjaCardState extends State<NinjaCard> {
                       },
                       child: Container(
                         padding: EdgeInsets.all(10),
-                        child: Text('Add Donut'),
+                        child: Container(
+                          child: Column(
+                            children: [
+                              Text('Add'),
+                              Text('Dounut')
+                            ],
+                          ),
+                        ),
+                        
                       ),
                       color: Colors.grey,
                     ),
@@ -105,7 +114,14 @@ class _NinjaCardState extends State<NinjaCard> {
                         });},
                       child: Container(
                         padding: EdgeInsets.all(10),
-                        child: Text('Drop Donut'),
+                        child: Container(
+                          child: Column(
+                            children: [
+                              Text('Drop'),
+                              Text('Dounut')
+                            ],
+                          ),
+                        ),
                       ),
                       color: Colors.grey,
                     ),
@@ -117,7 +133,14 @@ class _NinjaCardState extends State<NinjaCard> {
                       },
                       child: Container(
                         padding: EdgeInsets.all(10),
-                        child: Text('Reset Count'),
+                        child: Container(
+                          child: Column(
+                            children: [
+                              Text('Reset'),
+                              Text('Count')
+                            ],
+                          ),
+                        ),
                       ),
                       color: Colors.grey,
                     ),
